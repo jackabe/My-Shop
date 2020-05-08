@@ -1,0 +1,306 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  background-color: #222222;
+  color: white;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 95%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  color: white;
+  height: 50px;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+.Header div {
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 25px;
+  font-size: 12pt;
+}
+
+.Logo {
+  border-right: 3px solid #cc4949;
+  -webkit-animation: scrollDown 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: scrollDown 2s; /* Firefox < 16 */
+  -ms-animation: scrollDown 2s; /* Internet Explorer */
+  -o-animation: scrollDown 2s; /* Opera < 12.1 */
+  animation: scrollDown 2s;
+}
+
+.Title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.Layout {
+  height: 100%;
+  padding: 25px;
+  display: flex;
+  width: 100%;
+}
+
+nav {
+  -webkit-animation: scrollLeft 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: scrollLeft 3s; /* Firefox < 16 */
+  -ms-animation: scrollLeft 3s; /* Internet Explorer */
+  -o-animation: scrollLeft 3s; /* Opera < 12.1 */
+  animation: scrollLeft 3s;
+  width: 20%;
+}
+
+nav ul li {
+  padding: 10px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12pt;
+  cursor: pointer;
+  height: 30px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+nav ul li:hover img {
+  display: block;
+}
+
+nav ul li:hover {
+  color: #cc4949;
+}
+
+nav img {
+  display: none;
+  width: 20px;
+  padding-left: 20px;
+}
+
+nav svg {
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.Content {
+  width: 80%;
+}
+
+h3 {
+  font-size: 18pt;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+h4 {
+  font-size: 16pt;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.fancy {
+  color: #cc4949;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.medium-img {
+  width: 50px;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+}
+
+.inline img {
+  padding-right: 10px;
+}
+
+.large {
+  font-size: 12pt;
+}
+
+.medium {
+  font-size: 11pt;
+}
+
+/* Animations */
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Scroll down */
+
+@keyframes scrollDown {
+  from {
+    margin-top: -100px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes scrollDown {
+  from {
+    margin-top: -100px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes scrollDown {
+  from {
+    margin-top: -100px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes scrollDown {
+  from {
+    margin-top: -100px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes scrollDown {
+  from {
+    margin-top: -100px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+
+/* Scroll in left */
+
+@keyframes scrollLeft {
+  from {
+    margin-left: -100px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes scrollLeft {
+  from {
+    margin-left: -100px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes scrollLeft {
+  from {
+    margin-left: -100px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes scrollLeft {
+  from {
+    margin-left: -100px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes scrollLeft {
+  from {
+    margin-left: -100px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
